@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Code Editor</title>
+		
+		<script src= "https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.min.css">
+		<script src= "https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/mode/javascript/javascript.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/theme/base16-dark.css">
+	</head>
+	<body>
+		<textarea id="codearea"></textarea>
+	</body>
+	<script type="text/javascript">
+		const codemirrorEditor = CodeMirror.fromTextArea(document.getElementById('codearea'), {
+  			lineNumbers: true,
+  			mode: "javascript",
+  			theme: "base16-dark"
+		});
+	</script>
+</html>
